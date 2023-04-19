@@ -47,7 +47,7 @@ const rooms = [
 
 const HomePage = () => {
     return (
-        <Template>
+        <Template login>
             <Stack as="section" maxW="90%" spacing={6} p={12}>
                 <Heading py={5} align="left" size="3xl">Streamlined Meeting Room Booking: The Reservation System Simplified</Heading>
                 <Text align="left" py={8} fontSize="lg">

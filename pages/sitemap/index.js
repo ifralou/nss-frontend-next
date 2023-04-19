@@ -20,6 +20,7 @@ import React from "react";
 import HomePage from "@/components/HomePage";
 import Wrapper from "@/components/Wrapper";
 import Auth from "@/components/Auth";
+import Reservations from "@/components/Reservations";
 
 const inter = Inter({subsets: ['latin']})
 
@@ -41,14 +42,12 @@ export default function Home() {
                     <TabList>
                         <Tab>Home</Tab>
                         <Tab>Login/Registration</Tab>
-                        <Tab>One</Tab>
+                        <Tab>Calendar</Tab>
                     </TabList>
                     <TabPanels>
                         <Wrapper><HomePage/></Wrapper>
                         <Wrapper><Auth/></Wrapper>
-                        <TabPanel>
-                            three
-                        </TabPanel>
+                        <Wrapper><Reservations/></Wrapper>
                     </TabPanels>
                 </Tabs>
                 <Container>

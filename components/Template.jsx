@@ -15,7 +15,7 @@ import {
 } from "@chakra-ui/react";
 import {FaMeetup} from "react-icons/fa";
 
-const Template = ({children}) => {
+const Template = ({children, login}) => {
     return (
         <Box align="center" py={10}>
             <Flex w="80%" as="header" p={2} align="center" justify="space-between">
@@ -30,10 +30,10 @@ const Template = ({children}) => {
                         <Tab>page</Tab>
                     </TabList>
                 </Tabs>
-                <HStack spacing={4}>
+                {login && <HStack spacing={4}>
                     <Button>Login</Button>
                     <Button>Register</Button>
-                </HStack>
+                </HStack>}
             </Flex>
 
             {children}
